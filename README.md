@@ -101,11 +101,11 @@ From an empty `Processed/` and `Charts/`, steps 1 to 4 take under a minute and t
 - **Namibia.** Its ISO code `NA` is read as missing by pandas unless `keep_default_na=False` is set; the South Africa loader and the build script set it.
 - **Not included.** The scripts that downloaded the sources, and the source PDFs of the Central Bank of Liberia: `Data/Export/Liberia/` holds the monthly table that was read from them.
 
-## Methods lane (triple collocation): `Methods/three_witnesses_methods/`
+## Methods lane (triple collocation): `Methods/`
 
 Estimates the error in each of the three records (exporter, importers' customs, ship tracking) with triple collocation, on year-over-year changes of `data/side_by_side.csv`.
 
-Run from `Methods/three_witnesses_methods/` after `pip install -r requirements.txt`:
+Run from `Methods/` after `pip install -r requirements.txt`:
 
 | What | Command | Report item |
 |---|---|---|
@@ -117,4 +117,4 @@ Run from `Methods/three_witnesses_methods/` after `pip install -r requirements.t
 | 18 stress scenarios (bar in `RECOVERY_BAR_scenarios.md`) | `python scripts/run_scenarios.py` | Figure 2b |
 
 Status: the Stage 2 planted-error test on real data (`src/stage2_plant.py`) is built and tested but has not been run.
-Large raw source files are not stored here; sources and download dates are listed in the report (Appendix, Table 5).
+The raw source files are in Data/ (see Data/README.md for sources and retrieval dates).
