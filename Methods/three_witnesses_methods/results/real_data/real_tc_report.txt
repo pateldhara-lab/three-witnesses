@@ -1,0 +1,35 @@
+REAL-DATA TRIPLE COLLOCATION  (table: side_by_side.csv)
+noise / signal, lower = cleaner; 90% range in brackets
+
+AUS (Australia): 59 rows, status assumptions_broken
+   exporter  undefined   (0.00 - 0.24)   undefined in 83% of resamples
+   importer       1.63   (1.36 - 2.75)   undefined in 0% of resamples
+   ships          0.54   (0.42 - 0.84)   undefined in 0% of resamples
+   reasons: negative_noise_variance:exporter
+   steadiness: importer share min 101% range 4.1 pts; ships min 94% range 2.2 pts -> steady
+
+BRA (Brazil): 58 rows, status ok
+   exporter       1.25   (0.84 - 3.20)   undefined in 0% of resamples
+   importer       1.24   (0.95 - 2.60)   undefined in 0% of resamples
+   ships          0.20   (0.00 - 0.49)   undefined in 69% of resamples
+   steadiness: importer share min 72% range 3.7 pts; ships min 96% range 5.4 pts -> steady
+
+LBR (Liberia): 57 rows, status assumptions_broken
+   exporter  undefined   (0.00 - 0.26)   undefined in 79% of resamples
+   importer       0.84   (0.70 - 1.11)   undefined in 0% of resamples
+   ships          0.84   (0.46 - 1.31)   undefined in 0% of resamples
+   reasons: negative_noise_variance:exporter
+   steadiness: importer share min 87% range 29.8 pts; ships min 69% range 22.2 pts -> NOT steady
+
+PER (Peru): 57 rows, status assumptions_broken
+   exporter  undefined   (0.00 - 1.02)   undefined in 51% of resamples
+   importer       3.38   (1.11 - 6.39)   undefined in 0% of resamples
+   ships          3.14   (1.57 - 5.36)   undefined in 0% of resamples
+   reasons: weak_link:importer-ships (corr=0.09); negative_noise_variance:exporter
+   steadiness: importer share min 132% range 30.2 pts; ships min 89% range 26.2 pts -> NOT steady
+
+ZAF (South Africa): 59 rows, status ok
+   exporter       0.75   (0.00 - 1.38)   undefined in 9% of resamples
+   importer       1.58   (1.05 - 2.92)   undefined in 1% of resamples
+   ships          1.60   (0.71 - 5.67)   undefined in 0% of resamples
+   steadiness: importer share min 75% range 6.2 pts; ships min 71% range 11.8 pts -> NOT steady

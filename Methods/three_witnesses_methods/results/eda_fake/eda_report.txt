@@ -1,0 +1,145 @@
+EDA of FAKE DATA (practice run)
+========================================================================
+
+--- 1_coverage ---
+Months present per record inside Jan 2019 - Dec 2024, and the longest run of months where any record is missing.
+country table_first_month table_last_month  window_months  exporter_present  importer_present  ships_present  all_three_present  longest_gap_months  flagged_months
+    AUS        2019-01-01       2024-12-01             72                72                72             72                 72                   0               0
+    BRA        2019-01-01       2024-12-01             72                72                72             72                 72                   0               0
+    LBR        2019-01-01       2024-12-01             72                72                72             72                 72                   0               0
+    PER        2019-01-01       2024-12-01             72                72                72             72                 72                   0               0
+    ZAF        2019-01-01       2024-12-01             72                72                72             72                 72                   0               0
+
+--- 2_suspicious_months ---
+Zeros, negatives, or values far from their neighbours (ratio near 10 or 0.1 hints at a unit slip).
+(none)
+
+--- 3_share_summary ---
+Importer and ship totals as a share of the exporter's tonnes. passes_F2_rule = at least 60% every year AND yearly share moves at most 7 points.
+country   record  years  mean_share  min_year_share  max_year_share  range_points  change_first_to_last_points  passes_F2_rule
+    AUS importer      6       0.994           0.990           1.000         0.976                        0.073            True
+    AUS    ships      6       1.001           0.989           1.006         1.685                       -0.447            True
+    BRA importer      6       0.995           0.986           1.006         1.917                       -1.531            True
+    BRA    ships      6       1.002           0.987           1.013         2.624                       -2.399            True
+    LBR importer      6       0.996           0.989           1.003         1.364                       -0.616            True
+    LBR    ships      6       1.003           0.990           1.019         2.914                       -2.796            True
+    PER importer      6       0.993           0.981           1.004         2.251                       -0.082            True
+    PER    ships      6       1.004           0.990           1.013         2.273                        0.695            True
+    ZAF importer      6       1.003           0.998           1.017         1.888                        0.087            True
+    ZAF    ships      6       1.008           0.984           1.024         4.014                       -2.018            True
+
+--- 4_best_lags ---
+Best lag by year-over-year correlation beside the lag used in the table. A small spread means the lag is weakly identified.
+country buyer  best_lag_yoy  best_corr_yoy  corr_yoy_spread_across_lags  lag_used_in_table
+    AUS china             1          0.968                        0.535                  1
+    AUS    eu             0          0.968                        0.691                  0
+    BRA china             1          0.969                        0.229                  1
+    BRA    eu             0          0.971                        0.374                  0
+    LBR china             1          0.961                        0.670                  1
+    LBR    eu             0          0.962                        0.862                  0
+    PER china             1          0.963                        0.429                  1
+    PER    eu             0          0.964                        0.575                  0
+    ZAF china             1          0.966                        0.615                  1
+    ZAF    eu             0          0.966                        0.726                  0
+
+--- 5_seasonality ---
+Share of variation explained by calendar month. Should be large on levels and small on year-over-year changes.
+country   record  seasonal_share_levels  seasonal_share_yoy
+    AUS exporter                  0.509               0.014
+    AUS importer                  0.555               0.014
+    AUS    ships                  0.476               0.021
+    BRA exporter                  0.298               0.027
+    BRA importer                  0.285               0.025
+    BRA    ships                  0.311               0.035
+    LBR exporter                  0.477               0.009
+    LBR importer                  0.473               0.014
+    LBR    ships                  0.506               0.015
+    PER exporter                  0.204               0.040
+    PER importer                  0.191               0.037
+    PER    ships                  0.213               0.033
+    ZAF exporter                  0.440               0.011
+    ZAF importer                  0.428               0.010
+    ZAF    ships                  0.418               0.014
+
+--- 6_error_behaviour ---
+Wobble of log(record/exporter): size (sd), persistence (lag1_autocorr), wild months (excess_kurtosis, share_extreme).
+country   record  months_used    sd  lag1_autocorr  excess_kurtosis  share_extreme  corr_importer_vs_ships_ratio
+    AUS importer           72 0.020          0.030            0.321          0.000                         0.252
+    AUS    ships           72 0.033         -0.014           -0.067          0.000                         0.252
+    BRA importer           72 0.030         -0.045           -0.157          0.000                         0.018
+    BRA    ships           72 0.064         -0.107            0.631          0.014                         0.018
+    LBR importer           72 0.028         -0.092           -0.125          0.014                         0.075
+    LBR    ships           72 0.038          0.086           -0.227          0.000                         0.075
+    PER importer           72 0.028          0.021           -0.621          0.000                         0.032
+    PER    ships           72 0.042         -0.029            0.003          0.000                         0.032
+    ZAF importer           72 0.022          0.026           -0.275          0.000                        -0.076
+    ZAF    ships           72 0.034          0.216            0.286          0.014                        -0.076
+
+--- 7_odd_one_out ---
+PREVIEW for Stage 2: months where one record's year-over-year change disagrees with the other two.
+(none)
+
+--- 7b_biggest_disagreements ---
+The 4 months per country where one record sits furthest from the other two (no cut-off).
+country      month odd_record  deviation_units
+    AUS 2023-08-01      ships            1.283
+    AUS 2023-03-01   importer           -1.051
+    AUS 2021-07-01      ships            1.016
+    AUS 2023-06-01      ships            1.008
+    BRA 2021-09-01      ships            1.073
+    BRA 2022-08-01      ships           -1.017
+    BRA 2022-09-01      ships           -0.884
+    BRA 2024-03-01      ships           -0.875
+    LBR 2023-08-01      ships           -0.932
+    LBR 2022-06-01   importer            0.895
+    LBR 2022-06-01      ships           -0.844
+    LBR 2024-03-01   importer           -0.840
+    PER 2020-07-01      ships            1.111
+    PER 2023-02-01      ships            1.103
+    PER 2020-04-01      ships            0.932
+    PER 2020-05-01      ships            0.840
+    ZAF 2024-01-01      ships           -0.958
+    ZAF 2021-11-01   importer            0.909
+    ZAF 2022-10-01   importer           -0.822
+    ZAF 2024-10-01      ships           -0.750
+
+--- 8_error_catalog ---
+One row per country: the measured sizes the fake data should imitate.
+country  usable_months_all_three  longest_gap_months  importer_mean_share  importer_share_range_pts  importer_share_drift_first_to_last_pts  importer_passes_F2  importer_ratio_sd  importer_ratio_lag1_autocorr  importer_ratio_excess_kurtosis  ships_mean_share  ships_share_range_pts  ships_share_drift_first_to_last_pts  ships_passes_F2  ships_ratio_sd  ships_ratio_lag1_autocorr  ships_ratio_excess_kurtosis  suspicious_months  odd_one_out_months
+    AUS                       72                   0                0.994                     0.976                                   0.073                True              0.020                         0.030                           0.321             1.001                  1.685                               -0.447             True           0.033                     -0.014                       -0.067                  0                   0
+    BRA                       72                   0                0.995                     1.917                                  -1.531                True              0.030                        -0.045                          -0.157             1.002                  2.624                               -2.399             True           0.064                     -0.107                        0.631                  0                   0
+    LBR                       72                   0                0.996                     1.364                                  -0.616                True              0.028                        -0.092                          -0.125             1.003                  2.914                               -2.796             True           0.038                      0.086                       -0.227                  0                   0
+    PER                       72                   0                0.993                     2.251                                  -0.082                True              0.028                         0.021                          -0.621             1.004                  2.273                                0.695             True           0.042                     -0.029                        0.003                  0                   0
+    ZAF                       72                   0                1.003                     1.888                                   0.087                True              0.022                         0.026                          -0.275             1.008                  4.014                               -2.018             True           0.034                      0.216                        0.286                  0                   0
+
+--- 9_disagreement_vs_signal ---
+How far apart each PAIR of records is, as a multiple of the exporter's year-over-year movement. Independent noise a and b gives about sqrt(a^2+b^2). The fake-data study had 0.27 to 0.47.
+country  yoy_rows  signal_sd_exporter_yoy_log  importer_vs_exporter_ratio  ships_vs_exporter_ratio  importer_vs_ships_ratio
+    AUS        60                       0.109                       0.247                    0.468                    0.458
+    BRA        60                       0.184                       0.243                    0.485                    0.580
+    LBR        60                       0.137                       0.275                    0.364                    0.464
+    PER        60                       0.146                       0.286                    0.412                    0.481
+    ZAF        60                       0.131                       0.249                    0.378                    0.459
+
+--- 10_timing_aggregation ---
+Wobble of log(record/exporter) in single months vs 3-month blocks. Near 0.58 = independent; well below = cargo shifting between neighbouring months.
+country   record  sd_monthly  sd_quarterly  quarterly_over_monthly  expected_if_independent
+    AUS importer       0.020         0.012                   0.594                    0.577
+    AUS    ships       0.033         0.019                   0.570                    0.577
+    BRA importer       0.030         0.016                   0.546                    0.577
+    BRA    ships       0.065         0.033                   0.504                    0.577
+    LBR importer       0.028         0.016                   0.565                    0.577
+    LBR    ships       0.038         0.026                   0.673                    0.577
+    PER importer       0.029         0.013                   0.452                    0.577
+    PER    ships       0.042         0.025                   0.606                    0.577
+    ZAF importer       0.022         0.012                   0.555                    0.577
+    ZAF    ships       0.034         0.025                   0.734                    0.577
+
+--- 11_yoy_correlations ---
+How alike the records are on year-over-year changes. The fake-data study had about 0.95. equal_noise_equivalent = noise/signal each record would need if all three were equally noisy.
+country  yoy_rows  corr_importer_exporter  corr_ships_exporter  corr_importer_ships  mean_pairwise_corr  equal_noise_equivalent
+    AUS        60                   0.968                0.924                0.929               0.941                   0.251
+    BRA        60                   0.971                0.874                0.827               0.891                   0.350
+    LBR        60                   0.962                0.938                0.896               0.932                   0.270
+    PER        60                   0.964                0.917                0.894               0.925                   0.285
+    ZAF        60                   0.966                0.933                0.898               0.932                   0.269

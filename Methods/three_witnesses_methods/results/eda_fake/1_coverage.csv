@@ -1,0 +1,6 @@
+country,table_first_month,table_last_month,window_months,exporter_present,importer_present,ships_present,all_three_present,longest_gap_months,flagged_months
+AUS,2019-01-01,2024-12-01,72,72,72,72,72,0,0
+BRA,2019-01-01,2024-12-01,72,72,72,72,72,0,0
+LBR,2019-01-01,2024-12-01,72,72,72,72,72,0,0
+PER,2019-01-01,2024-12-01,72,72,72,72,72,0,0
+ZAF,2019-01-01,2024-12-01,72,72,72,72,72,0,0

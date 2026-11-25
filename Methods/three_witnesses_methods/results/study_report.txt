@@ -1,0 +1,28 @@
+========================================================================
+STAGE 4A SIMULATION STUDY: does triple collocation recover planted noise?
+========================================================================
+runs = 500   months = 72 (-> 60 year-over-year rows)   seed = 20261023
+bootstrap: 500 resamples, blocks of 6 months, 90% ranges
+code version (git): 912e81b
+planted noise/signal: exporter 10%, importer 25%, ships 40%
+
+What the method estimated (point estimates, runs where defined):
+  record     planted   median    5th-95th pct  undefined*      median 90% range
+  exporter      0.10    0.123    0.037 - 0.212        28%         0.000 - 0.187
+  importer      0.25    0.246    0.174 - 0.315         0%         0.180 - 0.344
+  ships         0.40    0.397    0.311 - 0.487         0%         0.311 - 0.543
+  * 'undefined' = negative noise variance, reported not hidden.
+
+Scored against the bar (RECOVERY_BAR.md):
+  [PASS] item 1: ships identified as noisiest: observed 99.6%, required >= 80%
+  [PASS] item 2: full order exporter < importer < ships: observed 93.2%, required >= 60%
+  [PASS] item 3a: coverage of 90% range: importer: observed 91.4%, required 85%-95%
+  [PASS] item 3b: coverage of 90% range: ships: observed 93.0%, required 85%-95%
+  [FAIL] item 3c: coverage of 90% range: exporter: observed 76.2%, required >= 80%
+  [PASS] item 4: median exporter range top is below median ships range bottom: observed 0.187 vs 0.311, required exporter top < ships bottom
+  [FAIL] item 5: share of runs with any flag: observed 27.8%, required <= 20%
+
+Overall: BAR NOT MET (see fallback in RECOVERY_BAR.md)
+
+Flagged runs (any cause): 27.8%; exporter-only ('too clean to measure'): 27.6%
+  by cause: negative_noise_variance:exporter x138; negative_noise_variance:importer x1
