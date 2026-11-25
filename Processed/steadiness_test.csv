@@ -1,0 +1,16 @@
+country,series,years_used,min_pct,max_pct,range_points,passes_60_floor,passes_7_point_range
+AUS,importer_cover_raw,6,101.1666,105.9251,4.7585,yes,yes
+AUS,importer_cover_aligned,6,101.3547,105.4724,4.1176,yes,yes
+AUS,ship_cover,6,94.3275,96.5754,2.2479,yes,yes
+BRA,importer_cover_raw,6,70.5431,74.4971,3.9540,yes,yes
+BRA,importer_cover_aligned,6,71.6629,75.3993,3.7365,yes,yes
+BRA,ship_cover,6,96.2099,101.6100,5.4000,yes,yes
+LBR,importer_cover_raw,6,87.3559,104.0806,16.7247,yes,no
+LBR,importer_cover_aligned,6,87.1343,116.9785,29.8442,yes,no
+LBR,ship_cover,6,69.3444,91.5767,22.2323,yes,no
+PER,importer_cover_raw,6,130.3120,154.7845,24.4726,yes,no
+PER,importer_cover_aligned,6,131.5652,161.7379,30.1727,yes,no
+PER,ship_cover,6,89.4492,115.6059,26.1567,yes,no
+ZAF,importer_cover_raw,6,76.1180,82.7683,6.6504,yes,yes
+ZAF,importer_cover_aligned,6,75.0165,81.2051,6.1886,yes,yes
+ZAF,ship_cover,6,70.7085,82.5393,11.8307,yes,no

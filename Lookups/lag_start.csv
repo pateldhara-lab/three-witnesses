@@ -1,0 +1,11 @@
+country,importer,start_low_months,start_high_months,sailing_time,note
+BRA,CHN,1,2,5-7 weeks,Brazil to China; customs clearance adds days
+BRA,EU27,0,1,about 3 weeks,Brazil to Europe
+ZAF,CHN,1,1,3-4 weeks,"South Africa to China, about 1 month"
+ZAF,EU27,1,2,about 3 weeks,"Sailing time alone (about 3 weeks, the same as Brazil to Europe) would suggest 0-1; the fit shows which is right"
+PER,CHN,1,2,about 5 weeks,Peru to China across the Pacific; sailing time estimated
+PER,EU27,0,1,about 3-4 weeks,"Peru to Europe via Panama; sailing time estimated. The EU took only 86 kt of Peruvian ore in 11 years, so this lag cannot be fitted meaningfully"
+LBR,CHN,1,2,about 5-6 weeks,"Liberia to China round the Cape; sailing time estimated. China recorded Liberian ore in only some months and in lumpy amounts, so this lag cannot be fitted meaningfully"
+LBR,EU27,0,1,about 2 weeks,Liberia to Europe about 2 weeks; customs clearance adds days. About 57 year-over-year months can be compared (January 2019 start)
+AUS,CHN,0,1,about 2 weeks,Port Hedland to China about 2 weeks; customs clearance adds days; sailing time estimated
+AUS,EU27,1,2,about 5-6 weeks,"Pilbara to Europe round the Cape of Good Hope; sailing time estimated. The EU buys little Australian ore, so this lag may not be fittable"

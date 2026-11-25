@@ -1,0 +1,105 @@
+iso3,name,iso2,comtrade_code,project_role,eurostat_partner,comex_brazil_name,sars_name
+AUS,Australia,AU,36,exporter,AU,Australia,Australia
+BRA,Brazil,BR,76,exporter,BR,,Brazil
+LBR,Liberia,LR,430,exporter,LR,,
+PER,Peru,PE,604,exporter,PE,Peru,Peru
+ZAF,South Africa,ZA,710,exporter,ZA,South Africa,
+CAN,Canada,CA,124,,CA,Canada,Canada
+CHN,China,CN,156,importer,,China,China
+EU27,"European Union, 27 members as of 2020 (UK excluded all years)",,,importer,,,
+IND,India,IN,699,,IN,India,India
+JPN,Japan,JP,392,,,Japan,Japan
+KOR,Rep. of Korea,KR,410,,,South Korea,South Korea
+TWN,Taiwan,TW,490,,,Taiwan,Taiwan
+BHR,Bahrain,BH,48,,,Bahrein,
+HKG,"China, Hong Kong SAR",HK,344,,,Hong Kong,Hong Kong
+MYS,Malaysia,MY,458,,,Malaysia,Malaysia
+MOZ,Mozambique,MZ,508,,,,Mozambique
+OMN,Oman,OM,512,,,Oman,Oman
+SGP,Singapore,SG,702,,,Singapore,Singapore
+NLD,Netherlands,NL,528,,,Netherlands,Netherlands
+AUT,Austria,AT,40,,,Austria,Austria
+BEL,Belgium,BE,56,,,Belgium,Belgium
+BGR,Bulgaria,BG,100,,,,
+HRV,Croatia,HR,191,,,Croatia,
+CYP,Cyprus,CY,196,,,,
+CZE,Czechia,CZ,203,,,Czech Republic,
+DNK,Denmark,DK,208,,,Denmark,
+EST,Estonia,EE,233,,,,Estonia
+FIN,Finland,FI,246,,,Finland,Finland
+FRA,France,FR,251,,,France,France
+DEU,Germany,DE,276,,,Germany,Germany
+GRC,Greece,GR,300,,,,
+HUN,Hungary,HU,348,,,,
+IRL,Ireland,IE,372,,,,Ireland
+ITA,Italy,IT,380,,,Italy,Italy
+LVA,Latvia,LV,428,,,,Latvia
+LTU,Lithuania,LT,440,,,,
+LUX,Luxembourg,LU,442,,,Luxembourg,
+MLT,Malta,MT,470,,,,
+POL,Poland,PL,616,,,Poland,Poland
+PRT,Portugal,PT,620,,,Portugal,
+ROU,Romania,RO,642,,,Romania,Romania
+SVK,Slovakia,SK,703,,,Slovakia,
+SVN,Slovenia,SI,705,,,Slovenia,Slovenia
+ESP,Spain,ES,724,,,Spain,Spain
+SWE,Sweden,SE,752,,,Sweden,Sweden
+DZA,Algeria,DZ,12,,,Algeria,Algeria
+AGO,Angola,AO,24,,,,Angola
+ATA,Antarctica,AQ,10,,,,Antarctica
+ARG,Argentina,AR,32,,,Argentina,Argentina
+BHS,Bahamas,BS,44,,,Bahamas,
+BGD,Bangladesh,BD,50,,,,Bangladesh
+BOL,Bolivia (Plurinational State of),BO,68,,,Bolivia,
+BIH,Bosnia Herzegovina,BA,70,,,Bosnia and Herzegovina,
+BWA,Botswana,BW,72,,,,Botswana
+BRN,Brunei Darussalam,BN,96,,,,
+CMR,Cameroon,CM,120,,,,Cameroon
+CHL,Chile,CL,152,,,Chile,Chile
+COL,Colombia,CO,170,,,Colombia,Colombia
+COD,Dem. Rep. of the Congo,CD,180,,,,Democratic Republic Of Congo
+EGY,Egypt,EG,818,,,Egypt,Egypt
+ERI,Eritrea,ER,232,,,,Eritrea
+SWZ,Eswatini,SZ,748,,,,Eswatini
+GHA,Ghana,GH,288,,,,Ghana
+GIN,Guinea,GN,324,,,Guinea,
+GUY,Guyana,GY,328,,,Guyana,
+IDN,Indonesia,ID,360,,,Indonesia,Indonesia
+ISR,Israel,IL,376,,,Israel,Israel
+KEN,Kenya,KE,404,,,,Kenya
+KWT,Kuwait,KW,414,,,Kuwait,
+LSO,Lesotho,LS,426,,,,Lesotho
+LBY,Libya,LY,434,,,Libya,
+MDG,Madagascar,MG,450,,,,Madagascar
+MLI,Mali,ML,466,,,,Mali
+MEX,Mexico,MX,484,,,Mexico,Mexico
+NCL,New Caledonia,NC,540,,,,New Caledonia
+NZL,New Zealand,NZ,554,,,New Zealand,
+NGA,Nigeria,NG,566,,,,Nigeria
+PAK,Pakistan,PK,586,,,,Pakistan
+PNG,Papua New Guinea,PG,598,,,,Papua New Guinea
+PRY,Paraguay,PY,600,,,Paraguay,
+PHL,Philippines,PH,608,,,Philippines,Philippines
+QAT,Qatar,QA,634,,,Qatar,Qatar
+RUS,Russian Federation,RU,643,,,,Russian Federation
+SAU,Saudi Arabia,SA,682,,,Saudi Arabia,Saudi Arabia
+SEN,Senegal,SN,686,,,,Senegal
+SRB,Serbia,RS,688,,,Serbia,Serbia
+SLE,Sierra Leone,SL,694,,,,Sierra Leone
+CHE,Switzerland,CH,757,,,Switzerland,Switzerland
+THA,Thailand,TH,764,,,Thailand,Thailand
+TLS,Timor-Leste,TL,626,,,,
+TTO,Trinidad and Tobago,TT,780,,,Trinidad and Tobago,
+TUR,Türkiye,TR,792,,,Turkey,Turkey
+USA,USA,US,842,,,United States,United States
+UGA,Uganda,UG,800,,,,Uganda
+UKR,Ukraine,UA,804,,UA,,Ukraine
+ARE,United Arab Emirates,AE,784,,,United Arab Emirates,United Arab Emirates
+GBR,United Kingdom,GB,826,,,United Kingdom,United Kingdom
+TZA,United Rep. of Tanzania,TZ,834,,,,Tanzania
+URY,Uruguay,UY,858,,,Uruguay,
+VEN,Venezuela,VE,862,,,,
+VNM,Viet Nam,VN,704,,,Vietnam,Viet Nam
+ZMB,Zambia,ZM,894,,,,Zambia
+ZWE,Zimbabwe,ZW,716,,,,Zimbabwe
+NAM,Namibia,NA,516,,,,Namibia

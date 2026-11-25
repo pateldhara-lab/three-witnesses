@@ -1,0 +1,9 @@
+# Keep text files on LF so every checkout gives the same bytes
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.xls binary
+*.xlsx binary
+
+# Source files are kept byte for byte as downloaded
+Data/** -text

@@ -1,0 +1,11 @@
+country,importer,fitted_lag,corr_yoy,corr_levels,approx_se,lag_if_pct_changes,same_lag_either_way,start_low_months,start_high_months,sailing_time,note,inside_start_range
+BRA,CHN,2,0.41665281907665996,0.7862043558779267,0.12309149097933272,2,yes,1,2,5-7 weeks,Brazil to China; customs clearance adds days,yes
+BRA,EU27,3,0.4014835291642252,-0.17727017611885396,0.12309149097933272,3,yes,0,1,about 3 weeks,Brazil to Europe,no
+ZAF,CHN,1,0.20062999906794668,0.4113758269553044,0.12309149097933272,1,yes,1,1,3-4 weeks,"South Africa to China, about 1 month",yes
+ZAF,EU27,0,0.32109111322175293,0.14192706762449653,0.12309149097933272,1,no,1,2,about 3 weeks,"Sailing time alone (about 3 weeks, the same as Brazil to Europe) would suggest 0-1; the fit shows which is right",no
+PER,CHN,1,0.4237319104878047,0.6419855348666922,0.125,1,yes,1,2,about 5 weeks,Peru to China across the Pacific; sailing time estimated,yes
+PER,EU27,2,0.15720564443163362,-0.036505862213665426,0.125,2,yes,0,1,about 3-4 weeks,"Peru to Europe via Panama; sailing time estimated. The EU took only 86 kt of Peruvian ore in 11 years, so this lag cannot be fitted meaningfully",no
+LBR,CHN,3,0.057909124231918595,0.1718232429119361,0.13608276348795434,0,no,1,2,about 5-6 weeks,"Liberia to China round the Cape; sailing time estimated. China recorded Liberian ore in only some months and in lumpy amounts, so this lag cannot be fitted meaningfully",no
+LBR,EU27,1,0.739026188431622,0.6930083516340474,0.13608276348795434,1,yes,0,1,about 2 weeks,Liberia to Europe about 2 weeks; customs clearance adds days. About 57 year-over-year months can be compared (January 2019 start),yes
+AUS,CHN,1,0.5198224017987054,0.5601134187137318,0.13608276348795434,1,yes,0,1,about 2 weeks,Port Hedland to China about 2 weeks; customs clearance adds days; sailing time estimated,yes
+AUS,EU27,3,0.2469584362036941,0.04984775518283903,0.13608276348795434,2,no,1,2,about 5-6 weeks,"Pilbara to Europe round the Cape of Good Hope; sailing time estimated. The EU buys little Australian ore, so this lag may not be fittable",no

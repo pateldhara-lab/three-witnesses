@@ -1,0 +1,14 @@
+portid,portwatch_name,country_iso3,witness_side,in_country_ship_total,feeds_table_column,sars_office,lat,lon,portwatch_url
+port955,Port Hedland,AUS,exporter port,yes,ship_t,,-20.33066003,118.5643416,https://portwatch.imf.org/pages/1f3c8e478b2a44f2b2a8c759e71c438c
+port276,Dampier,AUS,exporter port,yes,ship_t,,-20.6266866,116.7424761,https://portwatch.imf.org/pages/76ef2807f39d4a88b126177ec92a4ae5
+port981,Port Walcott,AUS,exporter port,yes,ship_extra_ports_t,,-20.60828612,117.1656515,https://portwatch.imf.org/pages/bf6bb9c5e6c340ad88bff78c8b160716
+port1328,Tubarao,BRA,exporter port,yes,ship_t,,-20.25882714,-40.2378754,https://portwatch.imf.org/pages/152c6a8807f14a8382579285b80f474d
+port2045,Porto de Itaguai,BRA,exporter port,yes,ship_t,,-22.93630234,-43.81836371,https://portwatch.imf.org/pages/d5f48b6c0ade48a69927d9ef9bbb8505
+port422,Guaiba Island Terminal,BRA,exporter port,yes,ship_t,,-22.91555492,-43.78307644,https://portwatch.imf.org/pages/9dad64ce7fc340b5b8c79b8d6f76f94e
+port506,Itaqui,BRA,exporter port,yes,ship_t,,-2.627113568,-44.35349287,https://portwatch.imf.org/pages/9eccbda05a1f42eeb4ebf646191f8a66
+port166,Porto do Acu,BRA,exporter port,yes,ship_t,,-21.85065621,-41.01992427,https://portwatch.imf.org/pages/34ffd09ec6814cdc8e06dea0e3f9fa25
+port2368,Ponta Ubu,BRA,exporter port,yes,ship_t,,-20.78163224,-40.57181796,https://portwatch.imf.org/pages/674dbf9632054b2b99c3d70c40e759f0
+port1133,Saldanha Bay,ZAF,exporter port,yes,ship_t,Saldanha Bay,-32.99778093,18.00771256,https://portwatch.imf.org/pages/1151e80d08d94028a61d1589a4497db3
+port1099,Richards Bay,ZAF,exporter port,no: coal port,,Richards Bay,-28.79239882,32.03937272,https://portwatch.imf.org/pages/3208de13d8934f8f9f664a316ed0b15f
+port91,San Nicolas,PER,exporter port,yes,ship_t,,-15.25817877,-75.23949267,https://portwatch.imf.org/pages/463652780fdc4635bb8e29e853677cc1
+port181,Buchanan,LBR,exporter port,yes,ship_t,,5.865644367,-10.04409801,https://portwatch.imf.org/pages/2a2a020c4c2c47ce9ed89c4dd0cb2524
